@@ -24,9 +24,8 @@ SECRET_KEY = 'django-insecure-^=6-_k)oh!n9-fpcd1qd0rf(!8y2!!8cc*so1if(!*ydv@*_dc
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['your-domain.com', '*']  
-CSRF_TRUSTED_ORIGINS = ['https://8000-idx-mebel-1734367035391.cluster-rz2e7e5f5ff7owzufqhsecxujc.cloudworkstations.dev']  # Replace your-domain.com with your actual domain
-
+ALLOWED_HOSTS = ['arzon-mebellar.uz', '*']  
+CSRF_TRUSTED_ORIGINS = ['https://8000-idx-mebel-1734367035391.cluster-rz2e7e5f5ff7owzufqhsecxujc.cloudworkstations.dev', 'https://arzon-mebellar.uz'] 
 ADMIN_TELEGRAM_IDS = ['ablaze_coder']
 
 
