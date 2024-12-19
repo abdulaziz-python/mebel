@@ -120,6 +120,6 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-SITE_URL = 'https://your-site-url.com'
+SITE_URL = 'https://arzon-mebellar.uz'
 
 TELEGRAM_BOT_TOKEN = "7292005433:AAHDAMySxxyL72yvpJaYAP__ZTApZM2-KYk"
