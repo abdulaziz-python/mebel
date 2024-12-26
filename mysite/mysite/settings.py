@@ -13,13 +13,7 @@ SECRET_KEY = 'django-insecure-^=6-_k)oh!n9-fpcd1qd0rf(!8y2!!8cc*so1if(!*ydv@*_dc
 DEBUG = False
 
 ALLOWED_HOSTS = ['arzon-mebellar.uz', 'www.arzon-mebellar.uz', 'ns1.ahost.uz', 'ns2.ahost.uz','mebel-b9tv.onrender.com','www.mebel-b9tv.onrender.com']
-CSRF_TRUSTED_ORIGINS = [
-    'https://arzon-mebellar.uz',
-    'https://www.arzon-mebellar.uz',
-    'https://ns1.ahost.uz',
-    'https://ns2.ahost.uz',
-    'https://mebel-b9tv.onrender.com',
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 LOGGING = {
@@ -51,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'drf_yasg',
     'furniture.apps.FurnitureConfig',
     'bot.apps.BotConfig',
@@ -64,6 +59,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
