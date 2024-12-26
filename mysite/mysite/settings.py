@@ -14,6 +14,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['arzon-mebellar.uz', 'www.arzon-mebellar.uz', 'ns1.ahost.uz', 'ns2.ahost.uz','mebel-b9tv.onrender.com','www.mebel-b9tv.onrender.com']
 CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS =  ['arzon-mebellar.uz', 'www.arzon-mebellar.uz', 'ns1.ahost.uz', 'ns2.ahost.uz','mebel-b9tv.onrender.com','www.mebel-b9tv.onrender.com']
 
 
 LOGGING = {
