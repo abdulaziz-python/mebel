@@ -21,6 +21,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://ns2.ahost.uz',
     'https://www.arzon-mebellar.uz',
     'https://www.mebel-b9tv.onrender.com',
+    'localhost',
 ]
 
 
